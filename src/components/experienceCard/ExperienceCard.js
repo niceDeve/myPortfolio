@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import "./ExperienceCard.css";
 
 class ExperienceCard extends Component {
+  // lineExp (descs) {
+  //   return (
+  //     <div>
+  //       descs.map((desc))
+  //     </div>
+  //   )
+  // }
   render() {
     const experience = this.props.experience;
     const theme = this.props.theme;
@@ -20,12 +27,12 @@ class ExperienceCard extends Component {
         <div className="experience-card-body-div">
           <div className="experience-card-header-div">
             <div className="experience-card-heading-left">
-              <h3
+              {/* <h3
                 className="experience-card-title"
                 style={{ color: theme.text }}
               >
                 {experience["title"]}
-              </h3>
+              </h3> */}
               <p
                 className="experience-card-company"
                 style={{ color: theme.text }}
@@ -55,12 +62,14 @@ class ExperienceCard extends Component {
               </p>
             </div>
           </div>
-          <p
+          <div
             className="experience-card-description"
             style={{ color: theme.text }}
           >
-            {experience["description"]}
-          </p>
+            {experience["description"].map((desc) => {
+              return <div>{desc}</div>;
+            })}
+          </div>
         </div>
       </div>
     );
