@@ -27,7 +27,7 @@ class Education extends Component {
 								/> */}
                 <EducationImg theme={theme} />
               </div>
-              <div className="heading-text-div">
+              {/* <div className="heading-text-div">
                 <h1 className="heading-text" style={{ color: theme.text }}>
                   Education
                 </h1>
@@ -35,7 +35,7 @@ class Education extends Component {
                   Basic Qualification and Certifcations
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
-              </div>
+              </div> */}
             </div>
           </Fade>
           <Educations theme={this.props.theme} />

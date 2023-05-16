@@ -6,6 +6,7 @@ import { chosenTheme } from "./theme";
 import { GlobalStyles } from "./global";
 
 function App() {
+  console.log(chosenTheme);
   return (
     <ThemeProvider theme={chosenTheme}>
       <>
